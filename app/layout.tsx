@@ -3,6 +3,7 @@ import { Inter, Josefin_Sans } from "@next/font/google";
 import "./globals.css";
 import HeadingBar from "./components/UI/organisms/heading-bar/HeadingBar";
 import ContainerHeader from "./components/UI/organisms/ContainerHeader";
+import Footer from "./components/UI/organisms/footer/Footer";
 const inter = Inter({ subsets: ["latin"],variable:'--font-inter' });
 const josefinSaneFont = Josefin_Sans({
   weight: '700',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${josefinSaneFont.variable}`}>
         <ContainerHeader/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
